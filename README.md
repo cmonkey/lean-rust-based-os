@@ -6,7 +6,11 @@ wget https://www.kraxel.org/repos/jenkins/edk2/edk2.git-ovmf-x64-0-20220719.209.
 
 ```
 ## rpm extract (ArchLinux) 
-1. 通过rpmextract 进行rpm 解包
+1. install rpmextract
+```
+ yay -S rpmextract
+```
+2. 通过rpmextract 进行rpm 解包
 ```
 rpmextract.sh edk2.git-ovmf-x64-0-20220719.209.gf0064ac3af.EOL.no.nore.updates.noarch.rpm
 ```
