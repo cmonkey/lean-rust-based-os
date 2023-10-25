@@ -11,7 +11,7 @@ fn panic_handler(_info: &core::panic::PanicInfo) -> ! {
     loop {}
 }
 
-const HELLO_STR: &str = "Hello, woorld, Press any key to return to UEFI firmware.";
+const HELLO_STR: &str = "Hello, woorld, current support English, Press any key to return to UEFI firmware.";
 
 #[export_name = "efi_main"]
 pub extern "C" fn main(_h: efi::Handle, st: *mut efi::SystemTable) -> efi::Status {
